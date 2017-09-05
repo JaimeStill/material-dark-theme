@@ -2,3 +2,16 @@
 <p>
     Text in this paragraph should have dark theme foreground styling. The background color of the app itself should be dark, but it is in fact light.
 </p>
+<p>
+    Some material components are appropriately styled, but the <code>$mat-dark-theme-background</code> and <code>$mat-dark-theme-foreground</code> do not seem to take effect inside of the <code>&lt;router-outlet&gt;</code>    element.
+</p>
+<section>
+    <button md-button>Not Dark Themed</button>
+</section>
+<section [style.max-width.px]="800">
+    <md-card>
+        <md-card-content>
+            <p>Card, however, styles appropriately</p>
+        </md-card-content>
+    </md-card>
+</section>
