@@ -51,8 +51,8 @@ import { SidepanelService } from '../../services/sidepanel.service';
 })
 export class SidepanelComponent {
     state = 'min';
-
-    constructor(private sidepanel: SidepanelService) {
+    sidepanel: SidepanelService;
+    constructor(sidepanel: SidepanelService) {
         sidepanel.state.subscribe(s => {
             this.state = s;
         });
