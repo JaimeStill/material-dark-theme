@@ -1,0 +1,5 @@
+<md-nav-list [@slide]="sidepanel.state | async" class="sidepanel">
+    <a md-list-item routerLink="/home" routerLinkActive="active" [@slide]="state">
+        <md-icon>home</md-icon> <span [@reveal]="state">Home</span>
+    </a>
+</md-nav-list>

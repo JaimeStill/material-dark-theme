@@ -1,0 +1,60 @@
+@import '~@angular/material/_theming.scss';
+@include mat-core();
+
+$default-theme: mat-dark-theme(mat-palette($mat-green, A400), mat-palette($mat-light-blue, A400));
+@include angular-material-theme($default-theme);
+
+html, body, app-root, .app-frame {
+    overflow: hidden;
+    margin: 0;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.app-body {
+    box-sizing: border-box;
+    overflow: hidden;
+    height: 100%;
+}
+
+.app-panel {
+    overflow: auto;
+    height: 100%;
+}
+
+.mat-typography h1,
+.mat-typography h2,
+.mat-typography h3,
+.mat-typography h4,
+.mat-typography h5,
+.mat-typography h6,
+.mat-typography p,
+md-card.mat-card,
+p.mat-caption,
+md-input-container,
+md-select {
+    margin-top: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+code.snippet,
+.app-body a.link,
+.active.active div.mat-list-item-content,
+.md-option.mat-selected.map-primary,
+.mat-primary .mat-option.mat-selected {
+    color: map-get($mat-green, A400);
+}
+
+.app-body a.link:visited {
+    color: map-get($mat-light-blue, A400);
+}
+
+div.cdk-overlay-container {
+    background-color: transparent;
+    z-index: 9999;
+}
+
+md-nav-list.mat-nav-list.sidepanel {
+    background-color: #555;
+}
