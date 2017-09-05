@@ -7,6 +7,5 @@ import { SidepanelService } from './services/sidepanel.service';
     styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-    sidepanel: SidepanelService;
-    constructor(sidepanel: SidepanelService) {}
+    constructor(public sidepanel: SidepanelService) {}
 }
